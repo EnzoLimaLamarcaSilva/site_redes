@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redes Industriais | Redes &amp; Indústria</title>
+  <meta name="description" content="Profinet, EtherCAT, Fieldbus, AS-i, IO-Link, HART, OPC UA e MQTT.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="brand-logo">⚡</span>
+      <span>Redes &amp; Indústria<small>Base de Conhecimento</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="ti-vs-ta.html">TI vs. TA</a></li>
+      <li><a href="topologias.html">Topologias</a></li>
+      <li><a href="glossario.html">Glossário</a></li>
+      <li><a href="redes-escritorio.html">Escritório</a></li>
+      <li><a href="redes-industriais.html" class="active">Chão de Fábrica</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Início</a> / Redes Industriais</div>
+      <h1>Bloco B: Redes de Chão de Fábrica</h1>
+      <p>O foco total aqui é suportar calor, poeira e vibração, sem atrasar dados.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+
+        <article class="card">
+          <div class="icon">🚀</div>
+          <h3>Ethernet Industrial</h3>
+          <span class="tag">Alta velocidade</span>
+          <p>Redes como Profinet e Modbus TCP usam as mesmas regras da TI, mas com cabos blindados espessos e conectores de rosca (M12).</p>
+          <p>O <strong>EtherCAT</strong> é a estrela tecnológica: lê os dados <em>on-the-fly</em>, sem parar o pacote, processando em milissegundos.</p>
+          <ul class="proto-list"><li>Profinet</li><li>Modbus TCP</li><li>EtherCAT</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="icon amber">🔗</div>
+          <h3>Fieldbus</h3>
+          <span class="tag amber">O barramento clássico</span>
+          <p>Profibus DP e DeviceNet usam a regra <strong>Mestre-Escravo</strong>: o controlador mestre chama cada sensor (escravo) pela vez, impossibilitando colisões.</p>
+          <p>O <strong>CC-Link</strong> é o padrão dominante asiático, conhecido pela comunicação ultrarrápida em máquinas Mitsubishi e Omron.</p>
+          <ul class="proto-list"><li>Profibus DP</li><li>DeviceNet</li><li>CC-Link</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="icon green">📡</div>
+          <h3>Sensores e Base da Pirâmide</h3>
+          <span class="tag green">Nível de campo</span>
+          <p>O <strong>AS-i</strong> usa um cabo amarelo achatado onde os botões são "espetados" como grampos, sem precisar cortar fios.</p>
+          <p>O <strong>IO-Link</strong> transforma um sensor básico e "burro" (como um detector de presença) em um sensor inteligente, usando os mesmos 3 fios antigos.</p>
+          <ul class="proto-list"><li>AS-i</li><li>IO-Link</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="icon amber">🛢️</div>
+          <h3>Processos Perigosos e Explosivos</h3>
+          <span class="tag amber">Segurança Intrínseca</span>
+          <p>HART e Profibus PA limitam muito a voltagem e a corrente do cabo.</p>
+          <p>Assim, mesmo que o cabo seja cortado no meio de uma plataforma de petróleo, ele não tem energia suficiente para gerar uma faísca.</p>
+          <ul class="proto-list"><li>HART</li><li>Profibus PA</li></ul>
+        </article>
+
+      </div>
+
+      <h2 class="section-title" style="margin-top:3rem">O Topo: Indústria 4.0</h2>
+      <p class="section-sub">Aqui não há cabos próprios: são protocolos de software que ligam a fábrica ao mundo da TI e à nuvem.</p>
+      <div class="grid grid-2">
+        <article class="card">
+          <div class="icon">🌐</div>
+          <h3>OPC UA</h3>
+          <span class="tag">O "tradutor do Google"</span>
+          <p>Faz equipamentos chineses, alemães e americanos conversarem na mesma linguagem com o sistema de TI.</p>
+        </article>
+        <article class="card">
+          <div class="icon green">☁️</div>
+          <h3>MQTT</h3>
+          <span class="tag green">Protocolo de postagem leve</span>
+          <p>Usado para enviar pequenos dados da fábrica direto para um servidor em nuvem na internet.</p>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Resumo:</strong> do sensor (AS-i, IO-Link) ao controlador (Fieldbus, Ethernet Industrial) até a nuvem (OPC UA, MQTT), cada camada tem seu protocolo ideal.
+      </div>
+    </div>
+  </section>
+
+  <div class="container pager">
+    <a class="btn" href="redes-escritorio.html">← Redes de Escritório</a>
+    <a class="btn primary" href="../index.html">Voltar ao início</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid" style="grid-template-columns:1fr;max-width:48ch;margin-inline:auto;text-align:center">
+      <div><h4>Redes &amp; Indústria</h4><p>Base de conhecimento sobre infraestrutura de redes locais e industriais.</p></div>
+    </div>
+    <div class="copy">Base de Conhecimento · Infraestrutura e Redes</div>
+  </div>
+</footer>
+
+</body>
+</html>

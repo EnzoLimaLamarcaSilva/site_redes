@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redes de Escritório | Redes &amp; Indústria</title>
+  <meta name="description" content="Ethernet, Wi-Fi e Fibra Óptica: as redes corporativas.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="brand-logo">⚡</span>
+      <span>Redes &amp; Indústria<small>Base de Conhecimento</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="ti-vs-ta.html">TI vs. TA</a></li>
+      <li><a href="topologias.html">Topologias</a></li>
+      <li><a href="glossario.html">Glossário</a></li>
+      <li><a href="redes-escritorio.html" class="active">Escritório</a></li>
+      <li><a href="redes-industriais.html">Chão de Fábrica</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Início</a> / Redes de Escritório</div>
+      <h1>Bloco A: Redes de Escritório</h1>
+      <p>As redes corporativas, focadas em volume de dados e flexibilidade.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+
+        <article class="card">
+          <div class="icon">🔌</div>
+          <h3>Ethernet</h3>
+          <span class="tag">O cabo azul padrão</span>
+          <p>Cabos de cobre de 4 pares trançados, que anulam ruídos eletromagnéticos.</p>
+          <p>Usa <strong>Full-Duplex</strong> (ruas de mão dupla), eliminando o antigo problema de colisão de dados (CSMA/CD).</p>
+          <ul class="pros-cons"><li>Distância limite: 100 metros.</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="icon amber">📶</div>
+          <h3>Wi-Fi</h3>
+          <span class="tag amber">Rede sem fio</span>
+          <p>Emite radiofrequência em duas faixas: <strong>2.4 GHz</strong> atravessa paredes e <strong>5 GHz</strong> entrega altíssima velocidade.</p>
+          <p>Sofre com "latência volátil": qualquer obstáculo ou rede vizinha pode causar atrasos.</p>
+          <ul class="pros-cons"><li>Regra CSMA/CA: escuta o ar antes de transmitir.</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="icon green">💡</div>
+          <h3>Fibra Óptica</h3>
+          <span class="tag green">Feixes de luz</span>
+          <p>Em vez de eletricidade, usa fótons dentro de fios de vidro.</p>
+          <p>Não sofre interferência de motores elétricos ou raios (isolamento galvânico perfeito).</p>
+          <ul class="pros-cons">
+            <li><strong>Multimodo:</strong> dentro do prédio.</li>
+            <li><strong>Monomodo:</strong> interliga cidades a quilômetros.</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem">Comparativo</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Tecnologia</th><th>Meio</th><th>Ponto forte</th><th>Ponto de atenção</th></tr></thead>
+          <tbody>
+            <tr><td>Ethernet</td><td>Cobre (4 pares trançados)</td><td>Full-Duplex, sem colisões</td><td>Limite de 100 m</td></tr>
+            <tr><td>Wi-Fi</td><td>Radiofrequência</td><td>Mobilidade; 2.4 GHz e 5 GHz</td><td>Latência volátil</td></tr>
+            <tr><td>Fibra Óptica</td><td>Luz em fio de vidro</td><td>Imune a interferências</td><td>Multimodo x Monomodo conforme a distância</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="container pager">
+    <a class="btn" href="glossario.html">← Glossário</a>
+    <a class="btn primary" href="redes-industriais.html">Redes Industriais →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid" style="grid-template-columns:1fr;max-width:48ch;margin-inline:auto;text-align:center">
+      <div><h4>Redes &amp; Indústria</h4><p>Base de conhecimento sobre infraestrutura de redes locais e industriais.</p></div>
+    </div>
+    <div class="copy">Base de Conhecimento · Infraestrutura e Redes</div>
+  </div>
+</footer>
+
+</body>
+</html>

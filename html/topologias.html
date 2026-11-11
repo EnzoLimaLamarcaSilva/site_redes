@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topologias de Rede | Redes &amp; Indústria</title>
+  <meta name="description" content="Estrela, barramento, anel e malha: como os cabos de rede se organizam.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="brand-logo">⚡</span>
+      <span>Redes &amp; Indústria<small>Base de Conhecimento</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="ti-vs-ta.html">TI vs. TA</a></li>
+      <li><a href="topologias.html" class="active">Topologias</a></li>
+      <li><a href="glossario.html">Glossário</a></li>
+      <li><a href="redes-escritorio.html">Escritório</a></li>
+      <li><a href="redes-industriais.html">Chão de Fábrica</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Início</a> / Topologias</div>
+      <h1>Como os cabos se organizam?</h1>
+      <p>A topologia define o desenho da rede. Ela influencia o custo do cabeamento e o que acontece quando um cabo rompe.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+
+        <article class="card topo-card">
+          <svg viewBox="0 0 300 170" role="img" aria-label="Diagrama de topologia em estrela">
+            <g class="link">
+              <line x1="150" y1="85" x2="150" y2="22"/><line x1="150" y1="85" x2="55" y2="45"/>
+              <line x1="150" y1="85" x2="245" y2="45"/><line x1="150" y1="85" x2="75" y2="145"/>
+              <line x1="150" y1="85" x2="225" y2="145"/>
+            </g>
+            <circle class="hub" cx="150" cy="85" r="15"/>
+            <circle class="node" cx="150" cy="22" r="10"/><circle class="node" cx="55" cy="45" r="10"/>
+            <circle class="node" cx="245" cy="45" r="10"/><circle class="node" cx="75" cy="145" r="10"/>
+            <circle class="node" cx="225" cy="145" r="10"/>
+          </svg>
+          <span class="tag">Comum em TI</span>
+          <h3>Estrela</h3>
+          <p>Todos os computadores se ligam a um ponto central (Switch).</p>
+          <ul class="pros-cons"><li>Se um cabo romper, só aquele computador cai.</li></ul>
+        </article>
+
+        <article class="card topo-card">
+          <svg viewBox="0 0 300 170" role="img" aria-label="Diagrama de topologia em barramento">
+            <line class="link" x1="20" y1="85" x2="280" y2="85"/>
+            <circle class="node" cx="50" cy="85" r="11"/><circle class="node" cx="115" cy="85" r="11"/>
+            <circle class="node" cx="180" cy="85" r="11"/><circle class="node" cx="245" cy="85" r="11"/>
+          </svg>
+          <span class="tag amber">Clássico industrial</span>
+          <h3>Barramento / Daisy-Chain</h3>
+          <p>Um único cabo vai passando "de mão em mão" de máquina em máquina.</p>
+          <ul class="pros-cons">
+            <li>Economiza muito cabeamento.</li>
+            <li class="con">Se romper no meio, metade da fábrica para.</li>
+          </ul>
+        </article>
+
+        <article class="card topo-card">
+          <svg viewBox="0 0 300 170" role="img" aria-label="Diagrama de topologia em anel">
+            <ellipse class="link" cx="150" cy="85" rx="95" ry="58"/>
+            <circle class="hub" cx="150" cy="27" r="12"/>
+            <circle class="node" cx="235" cy="60" r="10"/><circle class="node" cx="215" cy="130" r="10"/>
+            <circle class="node" cx="85" cy="130" r="10"/><circle class="node" cx="65" cy="60" r="10"/>
+          </svg>
+          <span class="tag amber">Industrial moderno</span>
+          <h3>Anel</h3>
+          <p>As máquinas são ligadas uma a uma, mas o cabo da última volta para o Switch.</p>
+          <ul class="pros-cons"><li>Se o cabo romper em qualquer ponto, os dados dão a volta pelo outro lado em milissegundos (redundância).</li></ul>
+        </article>
+
+        <article class="card topo-card">
+          <svg viewBox="0 0 300 170" role="img" aria-label="Diagrama de topologia em malha">
+            <g class="link alt">
+              <line x1="60" y1="40" x2="150" y2="30"/><line x1="150" y1="30" x2="240" y2="45"/>
+              <line x1="60" y1="40" x2="95" y2="125"/><line x1="150" y1="30" x2="150" y2="95"/>
+              <line x1="240" y1="45" x2="215" y2="125"/><line x1="95" y1="125" x2="150" y2="95"/>
+              <line x1="150" y1="95" x2="215" y2="125"/><line x1="60" y1="40" x2="150" y2="95"/>
+              <line x1="240" y1="45" x2="150" y2="95"/>
+            </g>
+            <circle class="node" cx="60" cy="40" r="10"/><circle class="node" cx="150" cy="30" r="10"/>
+            <circle class="node" cx="240" cy="45" r="10"/><circle class="node" cx="95" cy="125" r="10"/>
+            <circle class="node" cx="215" cy="125" r="10"/><circle class="hub" cx="150" cy="95" r="12"/>
+          </svg>
+          <span class="tag green">Wi-Fi e IoT</span>
+          <h3>Malha (Mesh)</h3>
+          <p>Dispositivos sem fio se conectam a vários vizinhos ao mesmo tempo.</p>
+          <ul class="pros-cons"><li>O caminho da internet é dinâmico e contorna obstáculos.</li></ul>
+        </article>
+
+      </div>
+
+      <div class="callout info">
+        <strong>Dica:</strong> a estrela domina os escritórios; o barramento e o anel aparecem no chão de fábrica, onde economizar cabo e ter redundância faz diferença.
+      </div>
+    </div>
+  </section>
+
+  <div class="container pager">
+    <a class="btn" href="ti-vs-ta.html">← TI vs. TA</a>
+    <a class="btn primary" href="glossario.html">Glossário →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid" style="grid-template-columns:1fr;max-width:48ch;margin-inline:auto;text-align:center">
+      <div><h4>Redes &amp; Indústria</h4><p>Base de conhecimento sobre infraestrutura de redes locais e industriais.</p></div>
+    </div>
+    <div class="copy">Base de Conhecimento · Infraestrutura e Redes</div>
+  </div>
+</footer>
+
+</body>
+</html>

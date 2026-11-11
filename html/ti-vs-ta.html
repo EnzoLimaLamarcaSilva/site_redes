@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TI vs. TA (IT/OT) | Redes &amp; Indústria</title>
+  <meta name="description" content="A diferença entre Tecnologia da Informação e Tecnologia da Automação.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="../index.html" class="brand">
+      <span class="brand-logo">⚡</span>
+      <span>Redes &amp; Indústria<small>Base de Conhecimento</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="ti-vs-ta.html" class="active">TI vs. TA</a></li>
+      <li><a href="topologias.html">Topologias</a></li>
+      <li><a href="glossario.html">Glossário</a></li>
+      <li><a href="redes-escritorio.html">Escritório</a></li>
+      <li><a href="redes-industriais.html">Chão de Fábrica</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Início</a> / TI vs. TA</div>
+      <h1>O Grande Paradigma: TI vs. TA</h1>
+      <p>Para compreender as redes, é essencial separar os dois mundos que a Indústria 4.0 está tentando unir.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="versus">
+        <article class="card ti">
+          <span class="big-label">TI · Tecnologia da Informação</span>
+          <h3>Corporativo</h3>
+          <p>O mundo dos escritórios. Foco em <strong>volume de dados</strong> e <strong>flexibilidade</strong> (vídeos, ERPs, e-mails).</p>
+          <p>Opera por <strong>"melhor esforço"</strong>: se um pacote de dados atrasar 1 segundo, ninguém nota.</p>
+          <span class="tag">Ethernet clássica</span><span class="tag">Wi-Fi</span>
+        </article>
+        <article class="card ta">
+          <span class="big-label">TA · Tecnologia da Automação</span>
+          <h3>Chão de Fábrica</h3>
+          <p>O mundo físico. Foco absoluto em <strong>disponibilidade</strong> e <strong>determinismo</strong>.</p>
+          <p>Se o comando de "Parada" atrasar 50 milissegundos, um braço robótico pode destruir uma esteira.</p>
+          <span class="tag amber">Profinet</span><span class="tag amber">EtherCAT</span>
+        </article>
+      </div>
+
+      <div class="callout">
+        <strong>Em uma frase:</strong> a TI quer mover muitos dados com flexibilidade; a TA quer garantir que o dado certo chegue no tempo certo, sempre.
+      </div>
+
+      <h2 class="section-title" style="margin-top:2.5rem">Comparativo rápido</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Critério</th><th>TI (Escritório)</th><th>TA (Fábrica)</th></tr></thead>
+          <tbody>
+            <tr><td>Foco</td><td>Volume de dados e flexibilidade</td><td>Disponibilidade e determinismo</td></tr>
+            <tr><td>Entrega dos dados</td><td>Melhor esforço</td><td>Tempo garantido</td></tr>
+            <tr><td>Tolerância a atraso</td><td>Alta (1 segundo passa despercebido)</td><td>Quase nula (50 ms podem causar dano)</td></tr>
+            <tr><td>Exemplos</td><td>Ethernet clássica, Wi-Fi</td><td>Profinet, EtherCAT</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="container pager">
+    <a class="btn" href="../index.html">← Início</a>
+    <a class="btn primary" href="topologias.html">Topologias →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid" style="grid-template-columns:1fr;max-width:48ch;margin-inline:auto;text-align:center">
+      <div><h4>Redes &amp; Indústria</h4><p>Base de conhecimento sobre infraestrutura de redes locais e industriais.</p></div>
+    </div>
+    <div class="copy">Base de Conhecimento · Infraestrutura e Redes</div>
+  </div>
+</footer>
+
+</body>
+</html>
